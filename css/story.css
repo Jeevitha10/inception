@@ -1,0 +1,21 @@
+.carousel-item > img {
+	opacity: 0.3;
+	border-radius: 10px;
+}
+
+.content {
+	color: rgb(133, 136, 143);
+}
+
+.story-1 {
+	animation: genres 5s 1;
+}
+@keyframes genres {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(-1rem);
+	}
+}

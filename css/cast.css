@@ -10,6 +10,7 @@ body {
 	display: flex;
 	align-items: flex-end;
 	padding: 0.5rem;
+	animation: card 3s linear;
 }
 .cast > img {
 	position: absolute;
@@ -20,6 +21,15 @@ body {
 	width: 200px;
 	height: 250px;
 	border-radius: 20px;
+}
+@keyframes card {
+	100%,
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(1rem);
+	}
 }
 @media screen and (max-width: 1248px) {
 	.casts {

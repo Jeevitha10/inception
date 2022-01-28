@@ -1,3 +1,11 @@
+@keyframes whole {
+	0% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateY(1rem);
+	}
+}
 .home {
 	position: fixed;
 	top: 0;
@@ -9,19 +17,41 @@
 
 .h-container {
 	padding: 2rem 10rem;
+	/* animation: whole 1s linear; */
 }
-
+.netflix,
+.inception {
+	animation: netflix 1s linear;
+}
+@keyframes netflix {
+	0% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(-1rem);
+	}
+}
 .title {
 	margin-top: 80px;
 }
-
+.genres,
+.lead {
+	animation: genres 1s linear;
+}
 .genre {
 	background-color: rgba(125, 130, 133, 0.6);
 	border-radius: none;
 	border-radius: 50px;
 	color: white;
 }
-
+@keyframes genres {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-1rem);
+	}
+}
 .readmore {
 	color: white;
 }
